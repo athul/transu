@@ -1,0 +1,24 @@
+$grey:#bdc3c7;
+$dark-blue-lighter:#34495e;
+
+.feed-item-wrapper{
+    width: 60%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    min-height: 10%;
+    background-color: $dark-blue-lighter;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .question{
+        font-size: 1.4rem;
+        padding: 0.5rem;
+        border-bottom: 2px solid #fff;
+    }
+    .user{
+        font-size: 0.7rem;
+        justify-self: start;
+    }
+}
