@@ -12,6 +12,7 @@ sqlparse = "==0.3.0"
 django-multiselectfield = "==0.1.8"
 Django = "==2.2.5"
 djangorestframework = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"
