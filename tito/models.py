@@ -16,7 +16,6 @@ LANG_CHOICE = (
 
 class Translator(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE,default='')
-    fullname = models.CharField(max_length=100)
     reputation = models.PositiveIntegerField()
     languages = MultiSelectField(min_choices=1,choices=LANG_CHOICE,default='')
 
@@ -27,6 +26,6 @@ def create_user_translator(sender, instance, created, **kwargs):
 
 @receiver(post_save, sender=User)
 def save_user_translator(sender, instance, **kwargs):
-    instance.profile.save()
+    instance.user.save()
 
 
