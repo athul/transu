@@ -126,3 +126,4 @@ dmypy.json
 # SQLite database files
 
 *.sqlite3
+node_modules
