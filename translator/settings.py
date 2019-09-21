@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'multiselectfield',
     'tito',
-    'frontend'
+    'frontend',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
