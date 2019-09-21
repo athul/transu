@@ -3,10 +3,12 @@ import React, { Component } from 'react';
 //import User from './components/user'
 import ResponsiveContainer from "./components/Home"
 import Home from "./components/Home"
+import FeedContainer from "./components/Feed/FeedContainer"
 class App extends Component {
     render() {
         return (
-            <ResponsiveContainer />
+            // <ResponsiveContainer />
+            <FeedContainer/>
         )
     }
 }
