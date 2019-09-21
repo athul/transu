@@ -18,7 +18,7 @@ class Translator(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE,blank=True)
     reputation = models.PositiveIntegerField(null=True)
     languages = MultiSelectField(min_choices=1,choices=LANG_CHOICE,default='')
-
+    
 @receiver(post_save, sender=User)
 def create_user_translator(sender, instance, created, **kwargs):
     if created:
