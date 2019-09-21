@@ -28,4 +28,6 @@ def create_user_translator(sender, instance, created, **kwargs):
 def save_user_translator(sender, instance, **kwargs):
     instance.user.save()
 
-
+class TranslationMessage(models.Model):
+    message = models.TextField(blank=True)
+    language = models.CharField(choices=LANG_CHOICE,blank=True,max_length=3)
