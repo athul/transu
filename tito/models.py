@@ -1,7 +1,8 @@
 from django.db import models
 from multiselectfield import MultiSelectField
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 from django.contrib.auth.models import User
-# Create your models here.
 
 LANG_CHOICE = (
     ('en','english'),
@@ -14,8 +15,18 @@ LANG_CHOICE = (
 )
 
 class Translator(models.Model):
-    username = models.CharField(max_length=100, unique=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE,default='')
     fullname = models.CharField(max_length=100)
     reputation = models.PositiveIntegerField()
     languages = MultiSelectField(min_choices=1,choices=LANG_CHOICE,default='')
+
+@receiver(post_save, sender=User)
+def create_user_translator(sender, instance, created, **kwargs):
+    if created:
+        Translator.objects.create(user=instance)
+
+@receiver(post_save, sender=User)
+def save_user_translator(sender, instance, **kwargs):
+    instance.profile.save()
+
 
