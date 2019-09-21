@@ -15,19 +15,11 @@ LANG_CHOICE = (
 )
 
 class Translator(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE,blank=True)
-    reputation = models.PositiveIntegerField(null=True)
+    upvote = models.PositiveIntegerField(null=True)
     languages = MultiSelectField(min_choices=1,choices=LANG_CHOICE,default='')
-    
-@receiver(post_save, sender=User)
-def create_user_translator(sender, instance, created, **kwargs):
-    if created:
-        Translator.objects.create(user=instance)
+    response = models.TextField(blank=True)
 
-@receiver(post_save, sender=User)
-def save_user_translator(sender, instance, **kwargs):
-    instance.translator.save()
 
-class TranslationMessage(models.Model):
-    message = models.TextField(blank=True)
+class TranslationQuery(models.Model):
+    query = models.TextField(blank=True)
     language = models.CharField(choices=LANG_CHOICE,blank=True,max_length=3)

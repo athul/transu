@@ -13,6 +13,7 @@ django-multiselectfield = "==0.1.8"
 Django = "==2.2.5"
 djangorestframework = "*"
 django-cors-headers = "*"
+djangorestframework-simplejwt = "*"
 
 [requires]
 python_version = "3.7"
