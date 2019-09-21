@@ -18,3 +18,4 @@ class Translator(models.Model):
     fullname = models.CharField(max_length=100)
     reputation = models.PositiveIntegerField()
     languages = MultiSelectField(min_choices=1,choices=LANG_CHOICE,default='')
+
