@@ -15,8 +15,8 @@ LANG_CHOICE = (
 )
 
 class Translator(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE,default='')
-    reputation = models.PositiveIntegerField()
+    user = models.OneToOneField(User, on_delete=models.CASCADE,blank=True)
+    reputation = models.PositiveIntegerField(null=True)
     languages = MultiSelectField(min_choices=1,choices=LANG_CHOICE,default='')
 
 @receiver(post_save, sender=User)
@@ -26,7 +26,7 @@ def create_user_translator(sender, instance, created, **kwargs):
 
 @receiver(post_save, sender=User)
 def save_user_translator(sender, instance, **kwargs):
-    instance.user.save()
+    instance.translator.save()
 
 class TranslationMessage(models.Model):
     message = models.TextField(blank=True)
