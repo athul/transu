@@ -5,8 +5,11 @@ import FeedItem from "./FeedItem"
 class FeedContainer extends Component{
 render(){
     return(
-    <div>
-        <FeedItem />
+    
+        <h1 style={{textAlign:'center'}}>Feed</h1>
+        <FeedItem/>
+        <FeedItem/>
+
     </div> 
     )
 }
