@@ -14,12 +14,13 @@ class QueryAPI(viewsets.ModelViewSet):
 class UserAPI(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-def useradd(request):
+    
+def queryAdd(request):
     form=QueryForm(request.POST or None)
     if form.is_valid():
         form.save()
-        form=Log_userForm()
+        form=QueryForm()
     context={
         'form':form
     }
-    return render(request,"bookshelf/useradd.html",context)
+    return render(request,"tito/qadd.html",context)
