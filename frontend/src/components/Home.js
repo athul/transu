@@ -13,7 +13,7 @@ class HomepageLayout extends Component{
                   <div className="container">
                       <div className="navbar-brand">
                           <a className="navbar-item" href="../">
-                              <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo"/>
+                              TRANSCOM
                           </a>
                           <span className="navbar-burger burger" data-target="navbarMenu">
                               <span></span>
