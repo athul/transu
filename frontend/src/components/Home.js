@@ -66,7 +66,7 @@ function Home() {
         </div>
       </div>
     </nav>
-
+    {/* Hero Section */}
     <section class="hero is-info is-large">
       <div class="hero-body">
         <div class="container">
