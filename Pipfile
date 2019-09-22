@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint="*"
+
+[packages]
+pytz = "==2019.2"
+sqlparse = "==0.3.0"
+django-multiselectfield = "==0.1.8"
+Django = "==2.2.5"
+djangorestframework = "*"
+django-cors-headers = "*"
+djangorestframework-simplejwt = "*"
+
+[requires]
+python_version = "3.7"
