@@ -72,7 +72,13 @@ coverage.xml
 # Translations
 *.mo
 
+*.pot
+
 # Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
 db.sqlite3-journal
 
 # Flask stuff:
@@ -137,8 +143,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
 upload/
 # End of https://www.gitignore.io/api/django
 generator/migrations/0001_initial.py
 generator/migrations/0001_initial.py
+node_modules
+
+.pyc
+# SQLite database files
+
+*.sqlite3
 node_modules
