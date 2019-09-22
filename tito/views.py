@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import QueryForm
 from rest_framework import viewsets
 from .models import Translator,TranslationQuery
 from django.contrib.auth.models import User
@@ -13,3 +14,12 @@ class QueryAPI(viewsets.ModelViewSet):
 class UserAPI(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+def useradd(request):
+    form=QueryForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        form=Log_userForm()
+    context={
+        'form':form
+    }
+    return render(request,"bookshelf/useradd.html",context)
