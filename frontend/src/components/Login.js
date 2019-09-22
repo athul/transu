@@ -13,8 +13,6 @@ function Login() {
     <h2 className="inactive underlineHover">Sign Up </h2>
 
     
-    <div className="fadeIn first">
-    </div>
 
 
     <form>
