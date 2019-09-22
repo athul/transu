@@ -22,9 +22,8 @@ render(){
         <h1 style={{textAlign:'center'}}>Feed</h1>
         <FeedItem fdata={this.state.FeedItem}/>
         <FeedItem/>
-
-    </div> 
-    )
+   </div>
+        )
 }
 }
 export default FeedContainer;
