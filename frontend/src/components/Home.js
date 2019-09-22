@@ -71,12 +71,10 @@ class HomepageLayout extends Component{
                           </h2>
                           <div class="box">
                               <div class="field is-grouped">
-                                  <p class="control is-expanded">
-                                      <input class="input" type="text" placeholder="Enter your email"/>
-                                  </p>
-                                  <p class="control">
+                                  
+                                  <p>
                                       <a class="button is-info">
-                                          Notify Me
+                                          Register Now
                                       </a>
                                   </p>
                               </div>
