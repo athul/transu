@@ -12,8 +12,8 @@ class HomepageLayout extends Component{
               <nav className="navbar">
                   <div className="container">
                       <div className="navbar-brand">
-                          <a className="navbar-item" href="../">
-                              TRANSCOM
+                          <a className="navbar-item has-text-white-ter" href="../">
+                              TRANSCODE
                           </a>
                           <span className="navbar-burger burger" data-target="navbarMenu">
                               <span></span>
@@ -31,29 +31,10 @@ class HomepageLayout extends Component{
                                       <span>Home</span>
                                   </a>
                               </span>
+                              
+                              
                               <span className="navbar-item">
-                                  <a className="button is-white is-outlined" href="#">
-                                      <span className="icon">
-                                          <i className="fa fa-superpowers"></i>
-                                      </span>
-                                      <span>Examples</span>
-                                  </a>
-                              </span>
-                              <span className="navbar-item">
-                                  <a className="button is-white is-outlined" href="#">
-                                      <span className="icon">
-                                          <i className="fa fa-book"></i>
-                                      </span>
-                                      <span>Documentation</span>
-                                  </a>
-                              </span>
-                              <span className="navbar-item">
-                                  <a className="button is-white is-outlined" href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html">
-                                      <span className="icon">
-                                          <i className="fa fa-github"></i>
-                                      </span>
-                                      <span>View Source</span>
-                                  </a>
+                              <a class="button is-success is-centered has-text-white-ter"  style={{textAlign:`center`,margin:'0 auto'}} >Register</a>
                               </span>
                           </div>
                       </div>
@@ -65,12 +46,12 @@ class HomepageLayout extends Component{
                   <div className="container has-text-centered">
                       <div className="column is-6 is-offset-3">
                           <h1 className="title">
-                              Coming Soon
+                              Making Life simpler bit by bit
                           </h1>
                           <h2 className="subtitle">
-                              $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
+                            Providing a better solution to multilingual communication.
                           </h2>
-                          <div className="box is-centered">
+                          {/* <div className="box is-centered"> */}
                               <div className="field is-grouped is-centered">
                                   
                                   {/* <p className="is-pulled-left">
@@ -83,9 +64,9 @@ class HomepageLayout extends Component{
                                           Register Now
                                       </a>
                                   </p> */}
-                                  <a class="button is-success is-centered"  style={{textAlign:`center`,margin:'0 auto'}} >Register</a>
+                                  <a class="button is-success is-centered has-text-white-ter"  style={{textAlign:`center`,margin:'0 auto'}} >Register</a>
                               </div>
-                          </div>
+                          {/* </div> */}
                       </div>
                   </div>
               </div>
