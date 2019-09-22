@@ -5,13 +5,13 @@ from django.dispatch import receiver
 from django.contrib.auth.models import User
 
 LANG_CHOICE = (
-    ('en','english'),
-    ('ml','malayalam'),
-    ('hi','hindi'),
-    ('ta','tamil'),
-    ('kn','kannada'),
-    ('ur','urdu'),
-    ('ma','marati'),
+    ('Eng','English'),
+    ('Mal','Malayalam'),
+    ('Hin','Hindi'),
+    ('Tam','Tamil'),
+    ('Kan','Kannada'),
+    ('Urd','Urdu'),
+    ('Mar','Marati'),
 )
 
 class Translator(models.Model):

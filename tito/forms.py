@@ -1,13 +1,13 @@
 from django import forms
 from .models import Translator,TranslationQuery
 LANG_CHOICE = (
-    ('en','english'),
-    ('ml','malayalam'),
-    ('hi','hindi'),
-    ('ta','tamil'),
-    ('kn','kannada'),
-    ('ur','urdu'),
-    ('ma','marati'),
+    ('Eng','english'),
+    ('Mal','malayalam'),
+    ('Hin','hindi'),
+    ('Tam','tamil'),
+    ('Kan','kannada'),
+    ('Urd','urdu'),
+    ('Mar','marati'),
 )
 class QueryForm(forms.ModelForm):
     query=forms.CharField(widget=forms.TextInput(attrs={"placeholder":"Message",

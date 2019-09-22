@@ -25,7 +25,7 @@ SECRET_KEY = '5b3zr-x9zgvpn6$v9$-wn@5yw3w*2ls&t_z%^2(6-!0!v-6w_d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.localtunnel.me','localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
