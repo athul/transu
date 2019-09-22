@@ -25,7 +25,7 @@ SECRET_KEY = '5b3zr-x9zgvpn6$v9$-wn@5yw3w*2ls&t_z%^2(6-!0!v-6w_d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.localtunnel.me','localhost']
 
 
 # Application definition
@@ -127,7 +127,7 @@ STATIC_URL = '/static/'
 
 CORS_ORIGIN_ALLOW_ALL =True
 
-REST_FRAMEWORK={
-    'DEFAULT_PERMISSION_CLASSES' :('rest_framework.permissions.IsAuthenticated',),
-    'DEFAULT_AUTHENTICATION_CLASSES' :('rest_framework_simplejwt.authentication.JWTAuthentication',),
-}
+#REST_FRAMEWORK={
+ #   'DEFAULT_PERMISSION_CLASSES' :('rest_framework.permissions.IsAuthenticated',),
+  #  'DEFAULT_AUTHENTICATION_CLASSES' :('rest_framework_simplejwt.authentication.JWTAuthentication',),
+#}
