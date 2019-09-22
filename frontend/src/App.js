@@ -4,13 +4,14 @@ import React, { Component } from 'react';
 import ResponsiveContainer from "./components/Home"
 import HomepageLayout from "./components/Home"
 import Login from "./components/Login"
+import SignUp from "./components/Signup"
 
 import FeedContainer from "./components/Feed/FeedContainer"
 class App extends Component {
     render() {
         return (
             // <ResponsiveContainer />
-            <Login />
+            <SignUp />
         )
     }
 }

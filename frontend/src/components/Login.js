@@ -14,9 +14,7 @@ function Login() {
     <h2 class="inactive underlineHover">Sign Up </h2>
 
     
-    <div class="fadeIn first">
-      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
-    </div>
+ 
 
 
     <form>
