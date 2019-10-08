@@ -8,7 +8,7 @@ class FeedContainer extends Component{
         FeedItem: []
       }
       componentDidMount() {
-        axios.get('http://localhost:8000/users/')
+        axios.get('https://api.sheety.co/cbf6e05c-f65a-4215-abaa-90ca8384b56f')
           .then(res => {
             this.setState({
               FeedItem: res.data
@@ -21,8 +21,6 @@ render(){
     <div>
         <h1 style={{textAlign:'center'}}>Feed</h1>
         <FeedItem fdata={this.state.FeedItem}/>
-        <FeedItem/>
-
     </div> 
     )
 }

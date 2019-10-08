@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./CSS/home.css";
-
+import FeedContainer from "./Feed/FeedContainer"
 class HomepageLayout extends Component {
   render() {
     return (
@@ -28,7 +28,7 @@ class HomepageLayout extends Component {
                       <span>Home</span>
                     </a>
                   </span>
-
+                  
                   <span className="navbar-item">
                     <a
                       class="button is-success is-centered has-text-white-ter"
@@ -73,7 +73,20 @@ class HomepageLayout extends Component {
             </div>
           </div>
         </div>
+        <div className="hero-body">
+          <div className="container has-text-centered">
+            <div className="column is-6 is-offset-3">
+             
+              {/* <div className="box is-centered"> */}
+              <div>
+                <FeedContainer/>
+              </div>
+              {/* </div> */}
+            </div>
+          </div>
+        </div>
       </section>
+      
     );
   }
 }
